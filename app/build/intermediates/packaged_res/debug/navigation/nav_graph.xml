@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/nav_graph"
+    app:startDestination="@id/fragmentZero">
+
+    <fragment
+        android:id="@+id/fragmentZero"
+        android:name="com.example.m19_location.presentation.FragmentZero"
+        android:label="FragmentZero"
+        tools:layout="@layout/zero_fragment">
+
+        <action
+            android:id="@+id/action_fragmentZero_to_fragmentFirst"
+            app:destination="@id/fragmentFirst" />
+        <action
+            android:id="@+id/action_fragmentZero_to_fragmentMaps"
+            app:destination="@id/fragmentMaps" />
+    </fragment>
+
+    <fragment
+        android:id="@+id/fragmentFirst"
+        android:name="com.example.m19_location.presentation.FragmentFirst"
+        android:label="FragmentFirst"
+        tools:layout="@layout/first_fragment">
+
+        <action
+            android:id="@+id/action_fragmentFirst_to_fragmentSecond"
+            app:destination="@id/fragmentSecond" />
+        <action
+            android:id="@+id/action_fragmentFirst_to_fragment"
+            app:destination="@id/fragmentZero" />
+        <action
+            android:id="@+id/action_fragmentFirst_to_fragmentZero"
+            app:destination="@id/fragmentZero" />
+    </fragment>
+
+    <fragment
+        android:id="@+id/fragmentSecond"
+        android:name="com.example.m19_location.presentation.FragmentSecond"
+        android:label="FragmentSecond"
+        tools:layout="@layout/second_fragment">
+        <argument
+            android:name="photos"
+
+            app:argType="com.example.m19_location.entity.Gallery" />
+        <action
+            android:id="@+id/action_fragmentSecond_to_fragmentFirst"
+            app:destination="@id/fragmentFirst" />
+
+    </fragment>
+    <fragment
+        android:id="@+id/fragmentMaps"
+        android:name="com.example.m19_location.presentation.FragmentMaps"
+        android:label="fragment_maps"
+        tools:layout="@layout/maps_fragment" >
+        <action
+            android:id="@+id/action_fragmentMaps_to_fragmentZero"
+            app:destination="@id/fragmentZero" />
+    </fragment>
+
+
+</navigation>

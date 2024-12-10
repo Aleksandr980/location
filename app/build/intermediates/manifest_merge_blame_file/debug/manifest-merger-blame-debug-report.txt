@@ -1,0 +1,405 @@
+1<?xml version="1.0" encoding="utf-8"?>
+2<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+3    package="com.example.m19_location"
+4    android:versionCode="1"
+5    android:versionName="1.0" >
+6
+7    <uses-sdk
+8        android:minSdkVersion="29"
+9        android:targetSdkVersion="33" />
+10
+11    <uses-feature
+11-->C:\Users\FAN17\AndroidStudioProjects\android_dev_1_2022\m19_location\app\src\main\AndroidManifest.xml:6:5-8:36
+12        android:name="android.hardware.camera"
+12-->C:\Users\FAN17\AndroidStudioProjects\android_dev_1_2022\m19_location\app\src\main\AndroidManifest.xml:7:9-47
+13        android:required="false" />
+13-->C:\Users\FAN17\AndroidStudioProjects\android_dev_1_2022\m19_location\app\src\main\AndroidManifest.xml:8:9-33
+14
+15    <uses-permission android:name="android.permission.INTERNET" />
+15-->C:\Users\FAN17\AndroidStudioProjects\android_dev_1_2022\m19_location\app\src\main\AndroidManifest.xml:10:5-67
+15-->C:\Users\FAN17\AndroidStudioProjects\android_dev_1_2022\m19_location\app\src\main\AndroidManifest.xml:10:22-64
+16    <uses-permission android:name="android.permission.CAMERA" />
+16-->C:\Users\FAN17\AndroidStudioProjects\android_dev_1_2022\m19_location\app\src\main\AndroidManifest.xml:11:5-65
+16-->C:\Users\FAN17\AndroidStudioProjects\android_dev_1_2022\m19_location\app\src\main\AndroidManifest.xml:11:22-62
+17    <uses-permission
+17-->C:\Users\FAN17\AndroidStudioProjects\android_dev_1_2022\m19_location\app\src\main\AndroidManifest.xml:12:5-15:40
+18        android:name="android.permission.WRITE_EXTERNAL_STORAGE"
+18-->C:\Users\FAN17\AndroidStudioProjects\android_dev_1_2022\m19_location\app\src\main\AndroidManifest.xml:13:9-65
+19        android:maxSdkVersion="28" />
+19-->C:\Users\FAN17\AndroidStudioProjects\android_dev_1_2022\m19_location\app\src\main\AndroidManifest.xml:14:9-35
+20    <uses-permission
+20-->C:\Users\FAN17\AndroidStudioProjects\android_dev_1_2022\m19_location\app\src\main\AndroidManifest.xml:16:5-18:38
+21        android:name="android.permission.READ_EXTERNAL_STORAGE"
+21-->C:\Users\FAN17\AndroidStudioProjects\android_dev_1_2022\m19_location\app\src\main\AndroidManifest.xml:17:9-64
+22        android:maxSdkVersion="28" />
+22-->C:\Users\FAN17\AndroidStudioProjects\android_dev_1_2022\m19_location\app\src\main\AndroidManifest.xml:18:9-35
+23    <uses-permission android:name="com.google.android.gms.permission.AD_ID" />
+23-->C:\Users\FAN17\AndroidStudioProjects\android_dev_1_2022\m19_location\app\src\main\AndroidManifest.xml:19:5-79
+23-->C:\Users\FAN17\AndroidStudioProjects\android_dev_1_2022\m19_location\app\src\main\AndroidManifest.xml:19:22-76
+24    <uses-permission android:name="android.permission.ACCESS_FINE_LOCATION" />
+24-->C:\Users\FAN17\AndroidStudioProjects\android_dev_1_2022\m19_location\app\src\main\AndroidManifest.xml:20:5-79
+24-->C:\Users\FAN17\AndroidStudioProjects\android_dev_1_2022\m19_location\app\src\main\AndroidManifest.xml:20:22-76
+25    <uses-permission android:name="android.permission.ACCESS_COARSE_LOCATION" />
+25-->C:\Users\FAN17\AndroidStudioProjects\android_dev_1_2022\m19_location\app\src\main\AndroidManifest.xml:21:5-81
+25-->C:\Users\FAN17\AndroidStudioProjects\android_dev_1_2022\m19_location\app\src\main\AndroidManifest.xml:21:22-78
+26
+27    <queries>
+27-->[androidx.camera:camera-extensions:1.4.0] C:\Users\FAN17\.gradle\caches\8.9\transforms\190e119a5c9037bf937be6a9370bf507\transformed\jetified-camera-extensions-1.4.0\AndroidManifest.xml:22:5-26:15
+28        <intent>
+28-->[androidx.camera:camera-extensions:1.4.0] C:\Users\FAN17\.gradle\caches\8.9\transforms\190e119a5c9037bf937be6a9370bf507\transformed\jetified-camera-extensions-1.4.0\AndroidManifest.xml:23:9-25:18
+29            <action android:name="androidx.camera.extensions.action.VENDOR_ACTION" />
+29-->[androidx.camera:camera-extensions:1.4.0] C:\Users\FAN17\.gradle\caches\8.9\transforms\190e119a5c9037bf937be6a9370bf507\transformed\jetified-camera-extensions-1.4.0\AndroidManifest.xml:24:13-86
+29-->[androidx.camera:camera-extensions:1.4.0] C:\Users\FAN17\.gradle\caches\8.9\transforms\190e119a5c9037bf937be6a9370bf507\transformed\jetified-camera-extensions-1.4.0\AndroidManifest.xml:24:21-83
+30        </intent>
+31        <!-- Needs to be explicitly declared on Android R+ -->
+32        <package android:name="com.google.android.apps.maps" />
+32-->[com.google.android.gms:play-services-maps:19.0.0] C:\Users\FAN17\.gradle\caches\8.9\transforms\37bd86edb3aa79239bd1d68d852a42c1\transformed\jetified-play-services-maps-19.0.0\AndroidManifest.xml:33:9-64
+32-->[com.google.android.gms:play-services-maps:19.0.0] C:\Users\FAN17\.gradle\caches\8.9\transforms\37bd86edb3aa79239bd1d68d852a42c1\transformed\jetified-play-services-maps-19.0.0\AndroidManifest.xml:33:18-61
+33    </queries> <!-- Include required permissions for Google Maps API to run. -->
+34    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+34-->[com.google.android.gms:play-services-maps:19.0.0] C:\Users\FAN17\.gradle\caches\8.9\transforms\37bd86edb3aa79239bd1d68d852a42c1\transformed\jetified-play-services-maps-19.0.0\AndroidManifest.xml:23:5-79
+34-->[com.google.android.gms:play-services-maps:19.0.0] C:\Users\FAN17\.gradle\caches\8.9\transforms\37bd86edb3aa79239bd1d68d852a42c1\transformed\jetified-play-services-maps-19.0.0\AndroidManifest.xml:23:22-76
+35
+36    <uses-feature
+36-->[com.google.android.gms:play-services-maps:19.0.0] C:\Users\FAN17\.gradle\caches\8.9\transforms\37bd86edb3aa79239bd1d68d852a42c1\transformed\jetified-play-services-maps-19.0.0\AndroidManifest.xml:26:5-28:35
+37        android:glEsVersion="0x00020000"
+37-->[com.google.android.gms:play-services-maps:19.0.0] C:\Users\FAN17\.gradle\caches\8.9\transforms\37bd86edb3aa79239bd1d68d852a42c1\transformed\jetified-play-services-maps-19.0.0\AndroidManifest.xml:27:9-41
+38        android:required="true" />
+38-->[com.google.android.gms:play-services-maps:19.0.0] C:\Users\FAN17\.gradle\caches\8.9\transforms\37bd86edb3aa79239bd1d68d852a42c1\transformed\jetified-play-services-maps-19.0.0\AndroidManifest.xml:28:9-32
+39
+40    <uses-permission android:name="android.permission.ACCESS_WIFI_STATE" />
+40-->[com.yandex.android:maps.mobile:4.4.0-lite] C:\Users\FAN17\.gradle\caches\8.9\transforms\d9d4462940e6609f09aaadb22bf66375\transformed\jetified-maps.mobile-4.4.0-lite\AndroidManifest.xml:15:5-76
+40-->[com.yandex.android:maps.mobile:4.4.0-lite] C:\Users\FAN17\.gradle\caches\8.9\transforms\d9d4462940e6609f09aaadb22bf66375\transformed\jetified-maps.mobile-4.4.0-lite\AndroidManifest.xml:15:22-73
+41    <uses-permission android:name="android.permission.CHANGE_WIFI_STATE" />
+41-->[com.yandex.android:maps.mobile:4.4.0-lite] C:\Users\FAN17\.gradle\caches\8.9\transforms\d9d4462940e6609f09aaadb22bf66375\transformed\jetified-maps.mobile-4.4.0-lite\AndroidManifest.xml:16:5-76
+41-->[com.yandex.android:maps.mobile:4.4.0-lite] C:\Users\FAN17\.gradle\caches\8.9\transforms\d9d4462940e6609f09aaadb22bf66375\transformed\jetified-maps.mobile-4.4.0-lite\AndroidManifest.xml:16:22-73
+42    <uses-permission android:name="android.permission.WAKE_LOCK" />
+42-->[com.yandex.android:maps.mobile:4.4.0-lite] C:\Users\FAN17\.gradle\caches\8.9\transforms\d9d4462940e6609f09aaadb22bf66375\transformed\jetified-maps.mobile-4.4.0-lite\AndroidManifest.xml:21:5-68
+42-->[com.yandex.android:maps.mobile:4.4.0-lite] C:\Users\FAN17\.gradle\caches\8.9\transforms\d9d4462940e6609f09aaadb22bf66375\transformed\jetified-maps.mobile-4.4.0-lite\AndroidManifest.xml:21:22-65
+43    <uses-permission android:name="android.permission.RECEIVE_BOOT_COMPLETED" />
+43-->[com.yandex.android:maps.mobile:4.4.0-lite] C:\Users\FAN17\.gradle\caches\8.9\transforms\d9d4462940e6609f09aaadb22bf66375\transformed\jetified-maps.mobile-4.4.0-lite\AndroidManifest.xml:22:5-81
+43-->[com.yandex.android:maps.mobile:4.4.0-lite] C:\Users\FAN17\.gradle\caches\8.9\transforms\d9d4462940e6609f09aaadb22bf66375\transformed\jetified-maps.mobile-4.4.0-lite\AndroidManifest.xml:22:22-78
+44
+45    <permission
+45-->[androidx.core:core:1.15.0] C:\Users\FAN17\.gradle\caches\8.9\transforms\9ef3b10f2327332f7d57d0f583cdd699\transformed\core-1.15.0\AndroidManifest.xml:22:5-24:47
+46        android:name="com.example.m19_location.DYNAMIC_RECEIVER_NOT_EXPORTED_PERMISSION"
+46-->[androidx.core:core:1.15.0] C:\Users\FAN17\.gradle\caches\8.9\transforms\9ef3b10f2327332f7d57d0f583cdd699\transformed\core-1.15.0\AndroidManifest.xml:23:9-81
+47        android:protectionLevel="signature" />
+47-->[androidx.core:core:1.15.0] C:\Users\FAN17\.gradle\caches\8.9\transforms\9ef3b10f2327332f7d57d0f583cdd699\transformed\core-1.15.0\AndroidManifest.xml:24:9-44
+48
+49    <uses-permission android:name="com.example.m19_location.DYNAMIC_RECEIVER_NOT_EXPORTED_PERMISSION" />
+49-->[androidx.core:core:1.15.0] C:\Users\FAN17\.gradle\caches\8.9\transforms\9ef3b10f2327332f7d57d0f583cdd699\transformed\core-1.15.0\AndroidManifest.xml:26:5-97
+49-->[androidx.core:core:1.15.0] C:\Users\FAN17\.gradle\caches\8.9\transforms\9ef3b10f2327332f7d57d0f583cdd699\transformed\core-1.15.0\AndroidManifest.xml:26:22-94
+50
+51    <application
+51-->C:\Users\FAN17\AndroidStudioProjects\android_dev_1_2022\m19_location\app\src\main\AndroidManifest.xml:23:5-62:19
+52        android:name="com.example.m19_location.App"
+52-->C:\Users\FAN17\AndroidStudioProjects\android_dev_1_2022\m19_location\app\src\main\AndroidManifest.xml:24:9-28
+53        android:allowBackup="true"
+53-->C:\Users\FAN17\AndroidStudioProjects\android_dev_1_2022\m19_location\app\src\main\AndroidManifest.xml:25:9-35
+54        android:appComponentFactory="androidx.core.app.CoreComponentFactory"
+54-->[androidx.core:core:1.15.0] C:\Users\FAN17\.gradle\caches\8.9\transforms\9ef3b10f2327332f7d57d0f583cdd699\transformed\core-1.15.0\AndroidManifest.xml:28:18-86
+55        android:dataExtractionRules="@xml/data_extraction_rules"
+55-->C:\Users\FAN17\AndroidStudioProjects\android_dev_1_2022\m19_location\app\src\main\AndroidManifest.xml:26:9-65
+56        android:debuggable="true"
+57        android:extractNativeLibs="false"
+58        android:fullBackupContent="@xml/backup_rules"
+58-->C:\Users\FAN17\AndroidStudioProjects\android_dev_1_2022\m19_location\app\src\main\AndroidManifest.xml:27:9-54
+59        android:icon="@mipmap/ic_launcher"
+59-->C:\Users\FAN17\AndroidStudioProjects\android_dev_1_2022\m19_location\app\src\main\AndroidManifest.xml:28:9-43
+60        android:label="@string/app_name"
+60-->C:\Users\FAN17\AndroidStudioProjects\android_dev_1_2022\m19_location\app\src\main\AndroidManifest.xml:29:9-41
+61        android:roundIcon="@mipmap/ic_launcher_round"
+61-->C:\Users\FAN17\AndroidStudioProjects\android_dev_1_2022\m19_location\app\src\main\AndroidManifest.xml:30:9-54
+62        android:supportsRtl="true"
+62-->C:\Users\FAN17\AndroidStudioProjects\android_dev_1_2022\m19_location\app\src\main\AndroidManifest.xml:31:9-35
+63        android:testOnly="true"
+64        android:theme="@style/Theme.AppCompat.DayNight.NoActionBar" >
+64-->C:\Users\FAN17\AndroidStudioProjects\android_dev_1_2022\m19_location\app\src\main\AndroidManifest.xml:32:9-68
+65
+66        <!--
+67             TODO: Before you run your application, you need a Google Maps API key.
+68
+69             To get one, follow the directions here:
+70
+71                https://developers.google.com/maps/documentation/android-sdk/get-api-key
+72
+73             Once you have your API key (it starts with "AIza"), define a new property in your
+74             project's local.properties file (e.g. MAPS_API_KEY=Aiza...), and replace the
+75             "YOUR_API_KEY" string in this file with "${MAPS_API_KEY}".
+76        -->
+77        <!-- <meta-data -->
+78        <!-- android:name="com.google.android.geo.API_KEY" -->
+79        <!-- android:value="YOUR_API_KEY" /> -->
+80        <meta-data
+80-->C:\Users\FAN17\AndroidStudioProjects\android_dev_1_2022\m19_location\app\src\main\AndroidManifest.xml:49:9-51:68
+81            android:name="com.yandex.android.KEY"
+81-->C:\Users\FAN17\AndroidStudioProjects\android_dev_1_2022\m19_location\app\src\main\AndroidManifest.xml:50:13-50
+82            android:value="8d3fc0e1-fedc-4db3-a90e-adf3de2d5646" />
+82-->C:\Users\FAN17\AndroidStudioProjects\android_dev_1_2022\m19_location\app\src\main\AndroidManifest.xml:51:13-65
+83
+84        <activity
+84-->C:\Users\FAN17\AndroidStudioProjects\android_dev_1_2022\m19_location\app\src\main\AndroidManifest.xml:53:9-61:20
+85            android:name="com.example.m19_location.presentation.MainActivity"
+85-->C:\Users\FAN17\AndroidStudioProjects\android_dev_1_2022\m19_location\app\src\main\AndroidManifest.xml:54:13-54
+86            android:exported="true" >
+86-->C:\Users\FAN17\AndroidStudioProjects\android_dev_1_2022\m19_location\app\src\main\AndroidManifest.xml:55:13-36
+87            <intent-filter>
+87-->C:\Users\FAN17\AndroidStudioProjects\android_dev_1_2022\m19_location\app\src\main\AndroidManifest.xml:56:13-60:29
+88                <action android:name="android.intent.action.MAIN" />
+88-->C:\Users\FAN17\AndroidStudioProjects\android_dev_1_2022\m19_location\app\src\main\AndroidManifest.xml:57:17-69
+88-->C:\Users\FAN17\AndroidStudioProjects\android_dev_1_2022\m19_location\app\src\main\AndroidManifest.xml:57:25-66
+89
+90                <category android:name="android.intent.category.LAUNCHER" />
+90-->C:\Users\FAN17\AndroidStudioProjects\android_dev_1_2022\m19_location\app\src\main\AndroidManifest.xml:59:17-77
+90-->C:\Users\FAN17\AndroidStudioProjects\android_dev_1_2022\m19_location\app\src\main\AndroidManifest.xml:59:27-74
+91            </intent-filter>
+92        </activity>
+93
+94        <uses-library
+94-->[androidx.camera:camera-extensions:1.4.0] C:\Users\FAN17\.gradle\caches\8.9\transforms\190e119a5c9037bf937be6a9370bf507\transformed\jetified-camera-extensions-1.4.0\AndroidManifest.xml:29:9-31:40
+95            android:name="androidx.camera.extensions.impl"
+95-->[androidx.camera:camera-extensions:1.4.0] C:\Users\FAN17\.gradle\caches\8.9\transforms\190e119a5c9037bf937be6a9370bf507\transformed\jetified-camera-extensions-1.4.0\AndroidManifest.xml:30:13-59
+96            android:required="false" />
+96-->[androidx.camera:camera-extensions:1.4.0] C:\Users\FAN17\.gradle\caches\8.9\transforms\190e119a5c9037bf937be6a9370bf507\transformed\jetified-camera-extensions-1.4.0\AndroidManifest.xml:31:13-37
+97
+98        <service
+98-->[androidx.camera:camera-camera2:1.4.0] C:\Users\FAN17\.gradle\caches\8.9\transforms\bb89b2e907c57babfd6fd82a2c2e8b46\transformed\jetified-camera-camera2-1.4.0\AndroidManifest.xml:24:9-33:19
+99            android:name="androidx.camera.core.impl.MetadataHolderService"
+99-->[androidx.camera:camera-camera2:1.4.0] C:\Users\FAN17\.gradle\caches\8.9\transforms\bb89b2e907c57babfd6fd82a2c2e8b46\transformed\jetified-camera-camera2-1.4.0\AndroidManifest.xml:25:13-75
+100            android:enabled="false"
+100-->[androidx.camera:camera-camera2:1.4.0] C:\Users\FAN17\.gradle\caches\8.9\transforms\bb89b2e907c57babfd6fd82a2c2e8b46\transformed\jetified-camera-camera2-1.4.0\AndroidManifest.xml:26:13-36
+101            android:exported="false" >
+101-->[androidx.camera:camera-camera2:1.4.0] C:\Users\FAN17\.gradle\caches\8.9\transforms\bb89b2e907c57babfd6fd82a2c2e8b46\transformed\jetified-camera-camera2-1.4.0\AndroidManifest.xml:27:13-37
+102            <meta-data
+102-->[androidx.camera:camera-camera2:1.4.0] C:\Users\FAN17\.gradle\caches\8.9\transforms\bb89b2e907c57babfd6fd82a2c2e8b46\transformed\jetified-camera-camera2-1.4.0\AndroidManifest.xml:30:13-32:89
+103                android:name="androidx.camera.core.impl.MetadataHolderService.DEFAULT_CONFIG_PROVIDER"
+103-->[androidx.camera:camera-camera2:1.4.0] C:\Users\FAN17\.gradle\caches\8.9\transforms\bb89b2e907c57babfd6fd82a2c2e8b46\transformed\jetified-camera-camera2-1.4.0\AndroidManifest.xml:31:17-103
+104                android:value="androidx.camera.camera2.Camera2Config$DefaultProvider" />
+104-->[androidx.camera:camera-camera2:1.4.0] C:\Users\FAN17\.gradle\caches\8.9\transforms\bb89b2e907c57babfd6fd82a2c2e8b46\transformed\jetified-camera-camera2-1.4.0\AndroidManifest.xml:32:17-86
+105        </service> <!-- Needs to be explicitly declared on P+ -->
+106        <uses-library
+106-->[com.google.android.gms:play-services-maps:19.0.0] C:\Users\FAN17\.gradle\caches\8.9\transforms\37bd86edb3aa79239bd1d68d852a42c1\transformed\jetified-play-services-maps-19.0.0\AndroidManifest.xml:39:9-41:40
+107            android:name="org.apache.http.legacy"
+107-->[com.google.android.gms:play-services-maps:19.0.0] C:\Users\FAN17\.gradle\caches\8.9\transforms\37bd86edb3aa79239bd1d68d852a42c1\transformed\jetified-play-services-maps-19.0.0\AndroidManifest.xml:40:13-50
+108            android:required="false" />
+108-->[com.google.android.gms:play-services-maps:19.0.0] C:\Users\FAN17\.gradle\caches\8.9\transforms\37bd86edb3aa79239bd1d68d852a42c1\transformed\jetified-play-services-maps-19.0.0\AndroidManifest.xml:41:13-37
+109
+110        <meta-data
+110-->[com.yandex.android:maps.mobile:4.4.0-lite] C:\Users\FAN17\.gradle\caches\8.9\transforms\d9d4462940e6609f09aaadb22bf66375\transformed\jetified-maps.mobile-4.4.0-lite\AndroidManifest.xml:25:9-27:38
+111            android:name="yandex.maps.runtime.stl.linkage"
+111-->[com.yandex.android:maps.mobile:4.4.0-lite] C:\Users\FAN17\.gradle\caches\8.9\transforms\d9d4462940e6609f09aaadb22bf66375\transformed\jetified-maps.mobile-4.4.0-lite\AndroidManifest.xml:26:13-59
+112            android:value="static" />
+112-->[com.yandex.android:maps.mobile:4.4.0-lite] C:\Users\FAN17\.gradle\caches\8.9\transforms\d9d4462940e6609f09aaadb22bf66375\transformed\jetified-maps.mobile-4.4.0-lite\AndroidManifest.xml:27:13-35
+113
+114        <service
+114-->[com.yandex.android:maps.mobile:4.4.0-lite] C:\Users\FAN17\.gradle\caches\8.9\transforms\d9d4462940e6609f09aaadb22bf66375\transformed\jetified-maps.mobile-4.4.0-lite\AndroidManifest.xml:29:9-32:72
+115            android:name="com.evernote.android.job.patched.internal.v21.PlatformJobService"
+115-->[com.yandex.android:maps.mobile:4.4.0-lite] C:\Users\FAN17\.gradle\caches\8.9\transforms\d9d4462940e6609f09aaadb22bf66375\transformed\jetified-maps.mobile-4.4.0-lite\AndroidManifest.xml:30:13-92
+116            android:exported="false"
+116-->[com.yandex.android:maps.mobile:4.4.0-lite] C:\Users\FAN17\.gradle\caches\8.9\transforms\d9d4462940e6609f09aaadb22bf66375\transformed\jetified-maps.mobile-4.4.0-lite\AndroidManifest.xml:31:13-37
+117            android:permission="android.permission.BIND_JOB_SERVICE" />
+117-->[com.yandex.android:maps.mobile:4.4.0-lite] C:\Users\FAN17\.gradle\caches\8.9\transforms\d9d4462940e6609f09aaadb22bf66375\transformed\jetified-maps.mobile-4.4.0-lite\AndroidManifest.xml:32:13-69
+118        <service
+118-->[com.yandex.android:maps.mobile:4.4.0-lite] C:\Users\FAN17\.gradle\caches\8.9\transforms\d9d4462940e6609f09aaadb22bf66375\transformed\jetified-maps.mobile-4.4.0-lite\AndroidManifest.xml:33:9-36:72
+119            android:name="com.evernote.android.job.patched.internal.v14.PlatformAlarmService"
+119-->[com.yandex.android:maps.mobile:4.4.0-lite] C:\Users\FAN17\.gradle\caches\8.9\transforms\d9d4462940e6609f09aaadb22bf66375\transformed\jetified-maps.mobile-4.4.0-lite\AndroidManifest.xml:34:13-94
+120            android:exported="false"
+120-->[com.yandex.android:maps.mobile:4.4.0-lite] C:\Users\FAN17\.gradle\caches\8.9\transforms\d9d4462940e6609f09aaadb22bf66375\transformed\jetified-maps.mobile-4.4.0-lite\AndroidManifest.xml:35:13-37
+121            android:permission="android.permission.BIND_JOB_SERVICE" />
+121-->[com.yandex.android:maps.mobile:4.4.0-lite] C:\Users\FAN17\.gradle\caches\8.9\transforms\d9d4462940e6609f09aaadb22bf66375\transformed\jetified-maps.mobile-4.4.0-lite\AndroidManifest.xml:36:13-69
+122        <service
+122-->[com.yandex.android:maps.mobile:4.4.0-lite] C:\Users\FAN17\.gradle\caches\8.9\transforms\d9d4462940e6609f09aaadb22bf66375\transformed\jetified-maps.mobile-4.4.0-lite\AndroidManifest.xml:37:9-39:40
+123            android:name="com.evernote.android.job.patched.internal.v14.PlatformAlarmServiceExact"
+123-->[com.yandex.android:maps.mobile:4.4.0-lite] C:\Users\FAN17\.gradle\caches\8.9\transforms\d9d4462940e6609f09aaadb22bf66375\transformed\jetified-maps.mobile-4.4.0-lite\AndroidManifest.xml:38:13-99
+124            android:exported="false" />
+124-->[com.yandex.android:maps.mobile:4.4.0-lite] C:\Users\FAN17\.gradle\caches\8.9\transforms\d9d4462940e6609f09aaadb22bf66375\transformed\jetified-maps.mobile-4.4.0-lite\AndroidManifest.xml:39:13-37
+125
+126        <receiver
+126-->[com.yandex.android:maps.mobile:4.4.0-lite] C:\Users\FAN17\.gradle\caches\8.9\transforms\d9d4462940e6609f09aaadb22bf66375\transformed\jetified-maps.mobile-4.4.0-lite\AndroidManifest.xml:41:9-50:20
+127            android:name="com.evernote.android.job.patched.internal.v14.PlatformAlarmReceiver"
+127-->[com.yandex.android:maps.mobile:4.4.0-lite] C:\Users\FAN17\.gradle\caches\8.9\transforms\d9d4462940e6609f09aaadb22bf66375\transformed\jetified-maps.mobile-4.4.0-lite\AndroidManifest.xml:42:13-95
+128            android:exported="false" >
+128-->[com.yandex.android:maps.mobile:4.4.0-lite] C:\Users\FAN17\.gradle\caches\8.9\transforms\d9d4462940e6609f09aaadb22bf66375\transformed\jetified-maps.mobile-4.4.0-lite\AndroidManifest.xml:43:13-37
+129            <intent-filter>
+129-->[com.yandex.android:maps.mobile:4.4.0-lite] C:\Users\FAN17\.gradle\caches\8.9\transforms\d9d4462940e6609f09aaadb22bf66375\transformed\jetified-maps.mobile-4.4.0-lite\AndroidManifest.xml:44:13-49:29
+130
+131                <!-- Keep the filter for legacy intents -->
+132                <action android:name="com.evernote.android.job.patched.internal.v14.RUN_JOB" />
+132-->[com.yandex.android:maps.mobile:4.4.0-lite] C:\Users\FAN17\.gradle\caches\8.9\transforms\d9d4462940e6609f09aaadb22bf66375\transformed\jetified-maps.mobile-4.4.0-lite\AndroidManifest.xml:47:17-96
+132-->[com.yandex.android:maps.mobile:4.4.0-lite] C:\Users\FAN17\.gradle\caches\8.9\transforms\d9d4462940e6609f09aaadb22bf66375\transformed\jetified-maps.mobile-4.4.0-lite\AndroidManifest.xml:47:25-93
+133                <action android:name="net.vrallev.android.job.v14.RUN_JOB" />
+133-->[com.yandex.android:maps.mobile:4.4.0-lite] C:\Users\FAN17\.gradle\caches\8.9\transforms\d9d4462940e6609f09aaadb22bf66375\transformed\jetified-maps.mobile-4.4.0-lite\AndroidManifest.xml:48:17-78
+133-->[com.yandex.android:maps.mobile:4.4.0-lite] C:\Users\FAN17\.gradle\caches\8.9\transforms\d9d4462940e6609f09aaadb22bf66375\transformed\jetified-maps.mobile-4.4.0-lite\AndroidManifest.xml:48:25-75
+134            </intent-filter>
+135        </receiver>
+136        <receiver
+136-->[com.yandex.android:maps.mobile:4.4.0-lite] C:\Users\FAN17\.gradle\caches\8.9\transforms\d9d4462940e6609f09aaadb22bf66375\transformed\jetified-maps.mobile-4.4.0-lite\AndroidManifest.xml:51:9-60:20
+137            android:name="com.evernote.android.job.patched.internal.JobBootReceiver"
+137-->[com.yandex.android:maps.mobile:4.4.0-lite] C:\Users\FAN17\.gradle\caches\8.9\transforms\d9d4462940e6609f09aaadb22bf66375\transformed\jetified-maps.mobile-4.4.0-lite\AndroidManifest.xml:52:13-85
+138            android:exported="false" >
+138-->[com.yandex.android:maps.mobile:4.4.0-lite] C:\Users\FAN17\.gradle\caches\8.9\transforms\d9d4462940e6609f09aaadb22bf66375\transformed\jetified-maps.mobile-4.4.0-lite\AndroidManifest.xml:53:13-37
+139            <intent-filter>
+139-->[com.yandex.android:maps.mobile:4.4.0-lite] C:\Users\FAN17\.gradle\caches\8.9\transforms\d9d4462940e6609f09aaadb22bf66375\transformed\jetified-maps.mobile-4.4.0-lite\AndroidManifest.xml:54:13-59:29
+140                <action android:name="android.intent.action.BOOT_COMPLETED" />
+140-->[com.yandex.android:maps.mobile:4.4.0-lite] C:\Users\FAN17\.gradle\caches\8.9\transforms\d9d4462940e6609f09aaadb22bf66375\transformed\jetified-maps.mobile-4.4.0-lite\AndroidManifest.xml:55:17-79
+140-->[com.yandex.android:maps.mobile:4.4.0-lite] C:\Users\FAN17\.gradle\caches\8.9\transforms\d9d4462940e6609f09aaadb22bf66375\transformed\jetified-maps.mobile-4.4.0-lite\AndroidManifest.xml:55:25-76
+141                <action android:name="android.intent.action.QUICKBOOT_POWERON" />
+141-->[com.yandex.android:maps.mobile:4.4.0-lite] C:\Users\FAN17\.gradle\caches\8.9\transforms\d9d4462940e6609f09aaadb22bf66375\transformed\jetified-maps.mobile-4.4.0-lite\AndroidManifest.xml:56:17-82
+141-->[com.yandex.android:maps.mobile:4.4.0-lite] C:\Users\FAN17\.gradle\caches\8.9\transforms\d9d4462940e6609f09aaadb22bf66375\transformed\jetified-maps.mobile-4.4.0-lite\AndroidManifest.xml:56:25-79
+142                <action android:name="com.htc.intent.action.QUICKBOOT_POWERON" />
+142-->[com.yandex.android:maps.mobile:4.4.0-lite] C:\Users\FAN17\.gradle\caches\8.9\transforms\d9d4462940e6609f09aaadb22bf66375\transformed\jetified-maps.mobile-4.4.0-lite\AndroidManifest.xml:57:17-82
+142-->[com.yandex.android:maps.mobile:4.4.0-lite] C:\Users\FAN17\.gradle\caches\8.9\transforms\d9d4462940e6609f09aaadb22bf66375\transformed\jetified-maps.mobile-4.4.0-lite\AndroidManifest.xml:57:25-79
+143                <action android:name="android.intent.action.MY_PACKAGE_REPLACED" />
+143-->[com.yandex.android:maps.mobile:4.4.0-lite] C:\Users\FAN17\.gradle\caches\8.9\transforms\d9d4462940e6609f09aaadb22bf66375\transformed\jetified-maps.mobile-4.4.0-lite\AndroidManifest.xml:58:17-84
+143-->[com.yandex.android:maps.mobile:4.4.0-lite] C:\Users\FAN17\.gradle\caches\8.9\transforms\d9d4462940e6609f09aaadb22bf66375\transformed\jetified-maps.mobile-4.4.0-lite\AndroidManifest.xml:58:25-81
+144            </intent-filter>
+145        </receiver>
+146
+147        <service
+147-->[com.yandex.android:maps.mobile:4.4.0-lite] C:\Users\FAN17\.gradle\caches\8.9\transforms\d9d4462940e6609f09aaadb22bf66375\transformed\jetified-maps.mobile-4.4.0-lite\AndroidManifest.xml:62:9-65:72
+148            android:name="com.evernote.android.job.patched.internal.JobRescheduleService"
+148-->[com.yandex.android:maps.mobile:4.4.0-lite] C:\Users\FAN17\.gradle\caches\8.9\transforms\d9d4462940e6609f09aaadb22bf66375\transformed\jetified-maps.mobile-4.4.0-lite\AndroidManifest.xml:63:13-90
+149            android:exported="false"
+149-->[com.yandex.android:maps.mobile:4.4.0-lite] C:\Users\FAN17\.gradle\caches\8.9\transforms\d9d4462940e6609f09aaadb22bf66375\transformed\jetified-maps.mobile-4.4.0-lite\AndroidManifest.xml:64:13-37
+150            android:permission="android.permission.BIND_JOB_SERVICE" />
+150-->[com.yandex.android:maps.mobile:4.4.0-lite] C:\Users\FAN17\.gradle\caches\8.9\transforms\d9d4462940e6609f09aaadb22bf66375\transformed\jetified-maps.mobile-4.4.0-lite\AndroidManifest.xml:65:13-69
+151        <service
+151-->[com.yandex.android:maps.mobile:4.4.0-lite] C:\Users\FAN17\.gradle\caches\8.9\transforms\d9d4462940e6609f09aaadb22bf66375\transformed\jetified-maps.mobile-4.4.0-lite\AndroidManifest.xml:66:9-69:72
+152            android:name="com.yandex.runtime.connectivity.internal.ConnectivityService"
+152-->[com.yandex.android:maps.mobile:4.4.0-lite] C:\Users\FAN17\.gradle\caches\8.9\transforms\d9d4462940e6609f09aaadb22bf66375\transformed\jetified-maps.mobile-4.4.0-lite\AndroidManifest.xml:67:13-88
+153            android:exported="true"
+153-->[com.yandex.android:maps.mobile:4.4.0-lite] C:\Users\FAN17\.gradle\caches\8.9\transforms\d9d4462940e6609f09aaadb22bf66375\transformed\jetified-maps.mobile-4.4.0-lite\AndroidManifest.xml:68:13-36
+154            android:permission="android.permission.BIND_JOB_SERVICE" />
+154-->[com.yandex.android:maps.mobile:4.4.0-lite] C:\Users\FAN17\.gradle\caches\8.9\transforms\d9d4462940e6609f09aaadb22bf66375\transformed\jetified-maps.mobile-4.4.0-lite\AndroidManifest.xml:69:13-69
+155
+156        <activity
+156-->[com.google.android.gms:play-services-base:18.5.0] C:\Users\FAN17\.gradle\caches\8.9\transforms\5976d2a046db4805d7e54bfb779ac9e5\transformed\jetified-play-services-base-18.5.0\AndroidManifest.xml:5:9-173
+157            android:name="com.google.android.gms.common.api.GoogleApiActivity"
+157-->[com.google.android.gms:play-services-base:18.5.0] C:\Users\FAN17\.gradle\caches\8.9\transforms\5976d2a046db4805d7e54bfb779ac9e5\transformed\jetified-play-services-base-18.5.0\AndroidManifest.xml:5:19-85
+158            android:exported="false"
+158-->[com.google.android.gms:play-services-base:18.5.0] C:\Users\FAN17\.gradle\caches\8.9\transforms\5976d2a046db4805d7e54bfb779ac9e5\transformed\jetified-play-services-base-18.5.0\AndroidManifest.xml:5:146-170
+159            android:theme="@android:style/Theme.Translucent.NoTitleBar" />
+159-->[com.google.android.gms:play-services-base:18.5.0] C:\Users\FAN17\.gradle\caches\8.9\transforms\5976d2a046db4805d7e54bfb779ac9e5\transformed\jetified-play-services-base-18.5.0\AndroidManifest.xml:5:86-145
+160
+161        <meta-data
+161-->[com.google.android.gms:play-services-basement:18.4.0] C:\Users\FAN17\.gradle\caches\8.9\transforms\436c4ef4245890310492dc838184d0db\transformed\jetified-play-services-basement-18.4.0\AndroidManifest.xml:6:9-122
+162            android:name="com.google.android.gms.version"
+162-->[com.google.android.gms:play-services-basement:18.4.0] C:\Users\FAN17\.gradle\caches\8.9\transforms\436c4ef4245890310492dc838184d0db\transformed\jetified-play-services-basement-18.4.0\AndroidManifest.xml:6:20-65
+163            android:value="@integer/google_play_services_version" />
+163-->[com.google.android.gms:play-services-basement:18.4.0] C:\Users\FAN17\.gradle\caches\8.9\transforms\436c4ef4245890310492dc838184d0db\transformed\jetified-play-services-basement-18.4.0\AndroidManifest.xml:6:66-119
+164
+165        <provider
+165-->[androidx.emoji2:emoji2:1.3.0] C:\Users\FAN17\.gradle\caches\8.9\transforms\be643d90cc11994dd4ac25216b3a3f53\transformed\jetified-emoji2-1.3.0\AndroidManifest.xml:24:9-32:20
+166            android:name="androidx.startup.InitializationProvider"
+166-->[androidx.emoji2:emoji2:1.3.0] C:\Users\FAN17\.gradle\caches\8.9\transforms\be643d90cc11994dd4ac25216b3a3f53\transformed\jetified-emoji2-1.3.0\AndroidManifest.xml:25:13-67
+167            android:authorities="com.example.m19_location.androidx-startup"
+167-->[androidx.emoji2:emoji2:1.3.0] C:\Users\FAN17\.gradle\caches\8.9\transforms\be643d90cc11994dd4ac25216b3a3f53\transformed\jetified-emoji2-1.3.0\AndroidManifest.xml:26:13-68
+168            android:exported="false" >
+168-->[androidx.emoji2:emoji2:1.3.0] C:\Users\FAN17\.gradle\caches\8.9\transforms\be643d90cc11994dd4ac25216b3a3f53\transformed\jetified-emoji2-1.3.0\AndroidManifest.xml:27:13-37
+169            <meta-data
+169-->[androidx.emoji2:emoji2:1.3.0] C:\Users\FAN17\.gradle\caches\8.9\transforms\be643d90cc11994dd4ac25216b3a3f53\transformed\jetified-emoji2-1.3.0\AndroidManifest.xml:29:13-31:52
+170                android:name="androidx.emoji2.text.EmojiCompatInitializer"
+170-->[androidx.emoji2:emoji2:1.3.0] C:\Users\FAN17\.gradle\caches\8.9\transforms\be643d90cc11994dd4ac25216b3a3f53\transformed\jetified-emoji2-1.3.0\AndroidManifest.xml:30:17-75
+171                android:value="androidx.startup" />
+171-->[androidx.emoji2:emoji2:1.3.0] C:\Users\FAN17\.gradle\caches\8.9\transforms\be643d90cc11994dd4ac25216b3a3f53\transformed\jetified-emoji2-1.3.0\AndroidManifest.xml:31:17-49
+172            <meta-data
+172-->[androidx.lifecycle:lifecycle-process:2.8.7] C:\Users\FAN17\.gradle\caches\8.9\transforms\27ee99f7568a1f5b243ed2b510cf1196\transformed\jetified-lifecycle-process-2.8.7\AndroidManifest.xml:29:13-31:52
+173                android:name="androidx.lifecycle.ProcessLifecycleInitializer"
+173-->[androidx.lifecycle:lifecycle-process:2.8.7] C:\Users\FAN17\.gradle\caches\8.9\transforms\27ee99f7568a1f5b243ed2b510cf1196\transformed\jetified-lifecycle-process-2.8.7\AndroidManifest.xml:30:17-78
+174                android:value="androidx.startup" />
+174-->[androidx.lifecycle:lifecycle-process:2.8.7] C:\Users\FAN17\.gradle\caches\8.9\transforms\27ee99f7568a1f5b243ed2b510cf1196\transformed\jetified-lifecycle-process-2.8.7\AndroidManifest.xml:31:17-49
+175            <meta-data
+175-->[androidx.profileinstaller:profileinstaller:1.4.0] C:\Users\FAN17\.gradle\caches\8.9\transforms\8b4a14d94bc86c1d075e3f00d856a7ea\transformed\jetified-profileinstaller-1.4.0\AndroidManifest.xml:29:13-31:52
+176                android:name="androidx.profileinstaller.ProfileInstallerInitializer"
+176-->[androidx.profileinstaller:profileinstaller:1.4.0] C:\Users\FAN17\.gradle\caches\8.9\transforms\8b4a14d94bc86c1d075e3f00d856a7ea\transformed\jetified-profileinstaller-1.4.0\AndroidManifest.xml:30:17-85
+177                android:value="androidx.startup" />
+177-->[androidx.profileinstaller:profileinstaller:1.4.0] C:\Users\FAN17\.gradle\caches\8.9\transforms\8b4a14d94bc86c1d075e3f00d856a7ea\transformed\jetified-profileinstaller-1.4.0\AndroidManifest.xml:31:17-49
+178        </provider>
+179
+180        <uses-library
+180-->[androidx.window:window:1.0.0] C:\Users\FAN17\.gradle\caches\8.9\transforms\dd08948cecff02b2fe3869f3694a1080\transformed\jetified-window-1.0.0\AndroidManifest.xml:25:9-27:40
+181            android:name="androidx.window.extensions"
+181-->[androidx.window:window:1.0.0] C:\Users\FAN17\.gradle\caches\8.9\transforms\dd08948cecff02b2fe3869f3694a1080\transformed\jetified-window-1.0.0\AndroidManifest.xml:26:13-54
+182            android:required="false" />
+182-->[androidx.window:window:1.0.0] C:\Users\FAN17\.gradle\caches\8.9\transforms\dd08948cecff02b2fe3869f3694a1080\transformed\jetified-window-1.0.0\AndroidManifest.xml:27:13-37
+183        <uses-library
+183-->[androidx.window:window:1.0.0] C:\Users\FAN17\.gradle\caches\8.9\transforms\dd08948cecff02b2fe3869f3694a1080\transformed\jetified-window-1.0.0\AndroidManifest.xml:28:9-30:40
+184            android:name="androidx.window.sidecar"
+184-->[androidx.window:window:1.0.0] C:\Users\FAN17\.gradle\caches\8.9\transforms\dd08948cecff02b2fe3869f3694a1080\transformed\jetified-window-1.0.0\AndroidManifest.xml:29:13-51
+185            android:required="false" />
+185-->[androidx.window:window:1.0.0] C:\Users\FAN17\.gradle\caches\8.9\transforms\dd08948cecff02b2fe3869f3694a1080\transformed\jetified-window-1.0.0\AndroidManifest.xml:30:13-37
+186
+187        <service
+187-->[androidx.room:room-runtime:2.6.1] C:\Users\FAN17\.gradle\caches\8.9\transforms\9aaad3a6840f9218d4d4a22961d06767\transformed\room-runtime-2.6.1\AndroidManifest.xml:24:9-28:63
+188            android:name="androidx.room.MultiInstanceInvalidationService"
+188-->[androidx.room:room-runtime:2.6.1] C:\Users\FAN17\.gradle\caches\8.9\transforms\9aaad3a6840f9218d4d4a22961d06767\transformed\room-runtime-2.6.1\AndroidManifest.xml:25:13-74
+189            android:directBootAware="true"
+189-->[androidx.room:room-runtime:2.6.1] C:\Users\FAN17\.gradle\caches\8.9\transforms\9aaad3a6840f9218d4d4a22961d06767\transformed\room-runtime-2.6.1\AndroidManifest.xml:26:13-43
+190            android:exported="false" />
+190-->[androidx.room:room-runtime:2.6.1] C:\Users\FAN17\.gradle\caches\8.9\transforms\9aaad3a6840f9218d4d4a22961d06767\transformed\room-runtime-2.6.1\AndroidManifest.xml:27:13-37
+191
+192        <receiver
+192-->[androidx.profileinstaller:profileinstaller:1.4.0] C:\Users\FAN17\.gradle\caches\8.9\transforms\8b4a14d94bc86c1d075e3f00d856a7ea\transformed\jetified-profileinstaller-1.4.0\AndroidManifest.xml:34:9-52:20
+193            android:name="androidx.profileinstaller.ProfileInstallReceiver"
+193-->[androidx.profileinstaller:profileinstaller:1.4.0] C:\Users\FAN17\.gradle\caches\8.9\transforms\8b4a14d94bc86c1d075e3f00d856a7ea\transformed\jetified-profileinstaller-1.4.0\AndroidManifest.xml:35:13-76
+194            android:directBootAware="false"
+194-->[androidx.profileinstaller:profileinstaller:1.4.0] C:\Users\FAN17\.gradle\caches\8.9\transforms\8b4a14d94bc86c1d075e3f00d856a7ea\transformed\jetified-profileinstaller-1.4.0\AndroidManifest.xml:36:13-44
+195            android:enabled="true"
+195-->[androidx.profileinstaller:profileinstaller:1.4.0] C:\Users\FAN17\.gradle\caches\8.9\transforms\8b4a14d94bc86c1d075e3f00d856a7ea\transformed\jetified-profileinstaller-1.4.0\AndroidManifest.xml:37:13-35
+196            android:exported="true"
+196-->[androidx.profileinstaller:profileinstaller:1.4.0] C:\Users\FAN17\.gradle\caches\8.9\transforms\8b4a14d94bc86c1d075e3f00d856a7ea\transformed\jetified-profileinstaller-1.4.0\AndroidManifest.xml:38:13-36
+197            android:permission="android.permission.DUMP" >
+197-->[androidx.profileinstaller:profileinstaller:1.4.0] C:\Users\FAN17\.gradle\caches\8.9\transforms\8b4a14d94bc86c1d075e3f00d856a7ea\transformed\jetified-profileinstaller-1.4.0\AndroidManifest.xml:39:13-57
+198            <intent-filter>
+198-->[androidx.profileinstaller:profileinstaller:1.4.0] C:\Users\FAN17\.gradle\caches\8.9\transforms\8b4a14d94bc86c1d075e3f00d856a7ea\transformed\jetified-profileinstaller-1.4.0\AndroidManifest.xml:40:13-42:29
+199                <action android:name="androidx.profileinstaller.action.INSTALL_PROFILE" />
+199-->[androidx.profileinstaller:profileinstaller:1.4.0] C:\Users\FAN17\.gradle\caches\8.9\transforms\8b4a14d94bc86c1d075e3f00d856a7ea\transformed\jetified-profileinstaller-1.4.0\AndroidManifest.xml:41:17-91
+199-->[androidx.profileinstaller:profileinstaller:1.4.0] C:\Users\FAN17\.gradle\caches\8.9\transforms\8b4a14d94bc86c1d075e3f00d856a7ea\transformed\jetified-profileinstaller-1.4.0\AndroidManifest.xml:41:25-88
+200            </intent-filter>
+201            <intent-filter>
+201-->[androidx.profileinstaller:profileinstaller:1.4.0] C:\Users\FAN17\.gradle\caches\8.9\transforms\8b4a14d94bc86c1d075e3f00d856a7ea\transformed\jetified-profileinstaller-1.4.0\AndroidManifest.xml:43:13-45:29
+202                <action android:name="androidx.profileinstaller.action.SKIP_FILE" />
+202-->[androidx.profileinstaller:profileinstaller:1.4.0] C:\Users\FAN17\.gradle\caches\8.9\transforms\8b4a14d94bc86c1d075e3f00d856a7ea\transformed\jetified-profileinstaller-1.4.0\AndroidManifest.xml:44:17-85
+202-->[androidx.profileinstaller:profileinstaller:1.4.0] C:\Users\FAN17\.gradle\caches\8.9\transforms\8b4a14d94bc86c1d075e3f00d856a7ea\transformed\jetified-profileinstaller-1.4.0\AndroidManifest.xml:44:25-82
+203            </intent-filter>
+204            <intent-filter>
+204-->[androidx.profileinstaller:profileinstaller:1.4.0] C:\Users\FAN17\.gradle\caches\8.9\transforms\8b4a14d94bc86c1d075e3f00d856a7ea\transformed\jetified-profileinstaller-1.4.0\AndroidManifest.xml:46:13-48:29
+205                <action android:name="androidx.profileinstaller.action.SAVE_PROFILE" />
+205-->[androidx.profileinstaller:profileinstaller:1.4.0] C:\Users\FAN17\.gradle\caches\8.9\transforms\8b4a14d94bc86c1d075e3f00d856a7ea\transformed\jetified-profileinstaller-1.4.0\AndroidManifest.xml:47:17-88
+205-->[androidx.profileinstaller:profileinstaller:1.4.0] C:\Users\FAN17\.gradle\caches\8.9\transforms\8b4a14d94bc86c1d075e3f00d856a7ea\transformed\jetified-profileinstaller-1.4.0\AndroidManifest.xml:47:25-85
+206            </intent-filter>
+207            <intent-filter>
+207-->[androidx.profileinstaller:profileinstaller:1.4.0] C:\Users\FAN17\.gradle\caches\8.9\transforms\8b4a14d94bc86c1d075e3f00d856a7ea\transformed\jetified-profileinstaller-1.4.0\AndroidManifest.xml:49:13-51:29
+208                <action android:name="androidx.profileinstaller.action.BENCHMARK_OPERATION" />
+208-->[androidx.profileinstaller:profileinstaller:1.4.0] C:\Users\FAN17\.gradle\caches\8.9\transforms\8b4a14d94bc86c1d075e3f00d856a7ea\transformed\jetified-profileinstaller-1.4.0\AndroidManifest.xml:50:17-95
+208-->[androidx.profileinstaller:profileinstaller:1.4.0] C:\Users\FAN17\.gradle\caches\8.9\transforms\8b4a14d94bc86c1d075e3f00d856a7ea\transformed\jetified-profileinstaller-1.4.0\AndroidManifest.xml:50:25-92
+209            </intent-filter>
+210        </receiver>
+211
+212        <service
+212-->[com.google.android.datatransport:transport-runtime:4.0.0] C:\Users\FAN17\.gradle\caches\8.9\transforms\63879a4373f65f69e8bc2787f5f1b7df\transformed\jetified-transport-runtime-4.0.0\AndroidManifest.xml:24:9-28:19
+213            android:name="com.google.android.datatransport.runtime.scheduling.jobscheduling.JobInfoSchedulerService"
+213-->[com.google.android.datatransport:transport-runtime:4.0.0] C:\Users\FAN17\.gradle\caches\8.9\transforms\63879a4373f65f69e8bc2787f5f1b7df\transformed\jetified-transport-runtime-4.0.0\AndroidManifest.xml:25:13-117
+214            android:exported="false"
+214-->[com.google.android.datatransport:transport-runtime:4.0.0] C:\Users\FAN17\.gradle\caches\8.9\transforms\63879a4373f65f69e8bc2787f5f1b7df\transformed\jetified-transport-runtime-4.0.0\AndroidManifest.xml:26:13-37
+215            android:permission="android.permission.BIND_JOB_SERVICE" >
+215-->[com.google.android.datatransport:transport-runtime:4.0.0] C:\Users\FAN17\.gradle\caches\8.9\transforms\63879a4373f65f69e8bc2787f5f1b7df\transformed\jetified-transport-runtime-4.0.0\AndroidManifest.xml:27:13-69
+216        </service>
+217
+218        <receiver
+218-->[com.google.android.datatransport:transport-runtime:4.0.0] C:\Users\FAN17\.gradle\caches\8.9\transforms\63879a4373f65f69e8bc2787f5f1b7df\transformed\jetified-transport-runtime-4.0.0\AndroidManifest.xml:30:9-32:40
+219            android:name="com.google.android.datatransport.runtime.scheduling.jobscheduling.AlarmManagerSchedulerBroadcastReceiver"
+219-->[com.google.android.datatransport:transport-runtime:4.0.0] C:\Users\FAN17\.gradle\caches\8.9\transforms\63879a4373f65f69e8bc2787f5f1b7df\transformed\jetified-transport-runtime-4.0.0\AndroidManifest.xml:31:13-132
+220            android:exported="false" />
+220-->[com.google.android.datatransport:transport-runtime:4.0.0] C:\Users\FAN17\.gradle\caches\8.9\transforms\63879a4373f65f69e8bc2787f5f1b7df\transformed\jetified-transport-runtime-4.0.0\AndroidManifest.xml:32:13-37
+221
+222        <service
+222-->[com.google.android.datatransport:transport-runtime:4.0.0] C:\Users\FAN17\.gradle\caches\8.9\transforms\63879a4373f65f69e8bc2787f5f1b7df\transformed\jetified-transport-runtime-4.0.0\AndroidManifest.xml:34:9-36:40
+223            android:name="com.google.android.datatransport.runtime.backends.TransportBackendDiscovery"
+223-->[com.google.android.datatransport:transport-runtime:4.0.0] C:\Users\FAN17\.gradle\caches\8.9\transforms\63879a4373f65f69e8bc2787f5f1b7df\transformed\jetified-transport-runtime-4.0.0\AndroidManifest.xml:35:13-103
+224            android:exported="false" />
+224-->[com.google.android.datatransport:transport-runtime:4.0.0] C:\Users\FAN17\.gradle\caches\8.9\transforms\63879a4373f65f69e8bc2787f5f1b7df\transformed\jetified-transport-runtime-4.0.0\AndroidManifest.xml:36:13-37
+225    </application>
+226
+227</manifest>

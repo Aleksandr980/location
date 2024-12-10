@@ -1,0 +1,26 @@
+[
+    {
+        "merged": "com.example.m19_location.app-mergeDebugResources-67:/layout/my_listphoto.xml",
+        "source": "com.example.m19_location.app-main-70:/layout/my_listphoto.xml"
+    },
+    {
+        "merged": "com.example.m19_location.app-mergeDebugResources-67:/layout/second_fragment.xml",
+        "source": "com.example.m19_location.app-main-70:/layout/second_fragment.xml"
+    },
+    {
+        "merged": "com.example.m19_location.app-mergeDebugResources-67:/layout/activity_main.xml",
+        "source": "com.example.m19_location.app-main-70:/layout/activity_main.xml"
+    },
+    {
+        "merged": "com.example.m19_location.app-mergeDebugResources-67:/layout/first_fragment.xml",
+        "source": "com.example.m19_location.app-main-70:/layout/first_fragment.xml"
+    },
+    {
+        "merged": "com.example.m19_location.app-mergeDebugResources-67:/layout/maps_fragment.xml",
+        "source": "com.example.m19_location.app-main-70:/layout/maps_fragment.xml"
+    },
+    {
+        "merged": "com.example.m19_location.app-mergeDebugResources-67:/layout/zero_fragment.xml",
+        "source": "com.example.m19_location.app-main-70:/layout/zero_fragment.xml"
+    }
+]
